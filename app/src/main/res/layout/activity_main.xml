@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_name"
+        android:contentDescription="Your Name"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/editText_Num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter first number"
+        android:inputType="numberDecimal"
+        android:layout_margin="8dp" />
+
+    <EditText
+        android:id="@+id/editText_Num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter second number"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+<LinearLayout
+android:id="@+id/layout_buttons"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center"
+android:layout_marginBottom="16dp">
+
+    <ImageButton
+        android:id="@+id/button_Add"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add"
+        android:onClick="onOperatorClick"
+        android:tag="add"
+        android:layout_margin="8dp"
+        android:background="#0000FF" />
+
+    <ImageButton
+        android:id="@+id/button_Subtract"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_subtract"
+        android:contentDescription="Subtract"
+        android:onClick="onOperatorClick"
+        android:tag="subtract"
+        android:layout_margin="8dp"
+        android:background="#0000FF" />
+
+
+    <ImageButton
+        android:id="@+id/button_Multiply"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_multiply"
+        android:contentDescription="Multiply"
+        android:onClick="onOperatorClick"
+        android:tag="multiply"
+        android:layout_margin="8dp"
+        android:background="#0000FF" />
+
+    <ImageButton
+        android:id="@+id/button_Divide"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_divide"
+        android:contentDescription="Divide"
+        android:onClick="onOperatorClick"
+        android:tag="divide"
+        android:layout_margin="8dp"
+        android:background="#0000FF" />
+</LinearLayout>
+
+<TextView
+android:id="@+id/textView_Result"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Answer will appear here"
+android:textSize="18sp"
+android:textStyle="bold"
+android:gravity="center"
+android:padding="8dp"
+android:background="#E0E0E0" />
+</LinearLayout>
